@@ -12,7 +12,9 @@
     flex-direction: column;
 }
 .right-h{
-    flex: 1
+    flex: 1;
+    position: relative;
+    background-color: greenyellow;
 }
 
 .ad{
@@ -34,7 +36,7 @@
 
 .ad>div{
     position: absolute;
-    background-color: wheat;
+    background-color: greenyellow;
     width: 85px;
     height: 50px;
     left: 8px;
@@ -42,7 +44,7 @@
     z-index: 1;
 }
 
-.hero-text{
+.home-text{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -53,10 +55,79 @@
     text-overflow: inherit;
 }
 
-.hero-text>div:nth-of-type(3){
+.home-text>div:nth-of-type(3){
     font-size: 14px;
     font-weight: 200;
     text-transform: none;
     letter-spacing: 1px;
     width: 80%;
+}
+
+.figures{
+    display: flex;
+    gap: 40px;
+
+}
+
+.figures>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.figures>div>span:nth-of-type(1){
+    color: white;
+    font-size: 35px;
+}
+
+.figures>div>span:nth-of-type(2){
+    color: grey;
+    text-transform: uppercase;
+}
+
+.home-buttons{
+    display: flex;
+    gap: 10px;
+    font-weight: normal;
+}
+
+.home-buttons>:nth-child(1){
+    color: white;
+    background-color: greenyellow;
+    width: 150px;
+}
+
+.home-buttons>:nth-child(2){
+    color: white;
+    background-color: transparent;
+    width: 150px;
+    border: 2px solid greenyellow;
+}
+
+.right-h>.btn{
+   position: absolute;
+   right: 20px; top: 15px; color: black;
+}
+
+.heart-rate>img{
+    width:30px;
+}
+
+.heart-rate{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: darkgray;
+    width: fit-content;
+    padding: 10px;
+    align-items: flex-start;
+    border-radius: 5px;
+    position: absolute;
+    right: 80px;
+    top: 115px;
+}
+
+.heart-rate>:nth-child(3)
+{
+    color: white;
+    font-size:25px;
 }

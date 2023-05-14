@@ -6,7 +6,7 @@
 
 .logo{
     width:100px;
-    height: 30px;
+    height: 70px;
 }
 
 .header-menu{
@@ -18,6 +18,6 @@
 
 .header-menu>li:hover{
     cursor: pointer;
-    color: rgb(28, 155, 54);
+    color: greenyellow;
     cursor: pointer;
 }
