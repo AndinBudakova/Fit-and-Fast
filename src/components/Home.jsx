@@ -2,6 +2,9 @@ import React from 'react'
 import './styles/Home.css'
 import Header from './Header/Header'
 import Heart from "../../src/assets/heart.jpg"
+import home_image from "../assets/home_image.jpg"
+import home_image_back from "../assets/home_image_back.jpg"
+import Calories from "../assets/calories.jpg"
 
 const Home = () => {
     return(
@@ -54,6 +57,19 @@ const Home = () => {
                     <img src={Heart} alt=""/>
                     <span>Heart Rate</span><span>116 bpm</span>
                 </div>
+                
+                <img src={home_image} className="home-image" alt=''/>
+                <img src={home_image_back} className="home-image-back" alt=''/>
+
+                <div className="calories">
+                    <img src={Calories} alt=''/>
+                    <div>
+                        <span>Calories Burned</span>
+                        <span>210 kcal</span>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     )
