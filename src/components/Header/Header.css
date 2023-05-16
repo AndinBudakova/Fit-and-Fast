@@ -1,23 +1,20 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
-    
 }
 
-.logo{
-    width:100px;
+.logo {
     height: 70px;
 }
 
-.header-menu{
+.header-menu {
     list-style: none;
     display: flex;
-    gap: 20px;
-    color:white;
+    gap: 70px;
+    color: white;
 }
 
-.header-menu>li:hover{
+.header-menu>li:hover {
     cursor: pointer;
-    color: greenyellow;
-    cursor: pointer;
+    color: rgb(96, 172, 96);
 }
