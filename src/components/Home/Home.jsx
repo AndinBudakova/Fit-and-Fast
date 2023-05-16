@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Header from "../Header/Header";
-import Heart from "../../assets/images/heart.png";
+import Kcal from "../../assets/images/calories.png";
 import Athlete from "../../assets/images/athlete.png";
 import AthleteG from "../../assets/images/athleteg.png";
 
@@ -61,10 +61,10 @@ const Home = () => {
       <div className="right">
         <button className="btn">Join Now</button>
 
-        <div className="heart">
-          <img src={Heart} alt="heart-icon" />
-          <span>Heart Rate</span>
-          <span>116 bpm</span>
+        <div className="kcal">
+          <img src={Kcal} alt="Kcal-icon" />
+          <span>Calories Burned</span>
+          <span>350 kcal</span>
         </div>
 
         <img src={Athlete} alt="" className="athlete" />

@@ -91,6 +91,10 @@
     display: flex;
     gap: 25px;
     font-weight: normal;
+
+    :hover{
+        box-shadow: 0px 0px 30px rgb(143, 192, 143);
+    }
 }
 
 .home-buttons>:nth-child(1) {
@@ -113,43 +117,43 @@
     color: black;
 }
 
-.heart {
+.kcal {
     display: flex;
     flex-direction: column;
     gap: 10px;
     background-color: rgb(77, 74, 74);
     width: fit-content;
     padding: 10px;
-    align-items: start;
-    border-radius: 5px;
+    align-items: center;
+    border-radius: 10px;
     position: absolute;
-    right: 50px;
-    top: 300px;
+    right: 25px;
+    top: 130px;
 }
 
-.heart>:nth-child(1) {
+.kcal>:nth-child(1) {
     width: 60px;
 }
 
-.heart>:nth-child(2) {
-    color: gray;
+.kcal>:nth-child(2) {
+    color: rgb(96, 172, 96);
 }
 
-.heart>:nth-child(3) {
+.kcal>:nth-child(3) {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .athlete {
     position: absolute;
-    top: 295px;
-    right: 10px;
+    top: 294.5px;
+    right: 7px;
     z-index: 2;
 }
 
 .athleteg {
     position: absolute;
-    top: 160px;
-    right: 150px;
+    top: 170px;
+    right: 135px;
 
 }

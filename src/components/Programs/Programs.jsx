@@ -6,17 +6,19 @@ import { programsData } from "../../data/programsData";
 const Programs = () => {
   return (
     <div className="Programs" id="programs">
-      {/* <div className="box"></div> */}
+      <div className="box"></div>
       <div className="programs-header">
         <span className="stroke-text">Explore our</span>
         <span>Programs</span>
         <span className="stroke-text">To Shape You</span>
       </div>
 
+
+      
       <div className="program-category">
         {programsData.map((program) => (
           <div className="category">
-            <img src={program.image} alt="" />
+          {program.image}
             <span>{program.heading}</span>
             <span>{program.description}</span>
             <div className="join">
@@ -26,6 +28,7 @@ const Programs = () => {
           </div>
         ))}
       </div>
+      <div className="box"></div>
     </div>
   );
 };
