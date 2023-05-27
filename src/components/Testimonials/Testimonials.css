@@ -15,6 +15,7 @@
 }
 
 .left-t>:nth-child(1){
+    font-size: 24px;
     color: rgb(96, 172, 96);
     font-weight: bold;
 }

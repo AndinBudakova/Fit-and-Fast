@@ -1,6 +1,5 @@
 .plans-container{
     background-color: rgb(77, 74, 74);
-    margin-top: -4px;
     padding: 0 2px;
     display: flex;
     flex-direction: column;
@@ -9,6 +8,18 @@
    
 }
 
+.plans-header{
+    border: 2px solid rgb(96, 172, 96);
+    display: flex;
+    gap: 100px;
+    font-weight: bold;
+    font-size: 50px;
+    justify-content: center;
+    color: black;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 50px 50px 70px 50px;
+}
 .plans{
     display: flex;
     align-items: center;
@@ -17,6 +28,7 @@
     
 }
 .plan{
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     background: rgb(105, 105, 105);

@@ -5,14 +5,23 @@ import Kcal from "../../assets/images/calories.png";
 import Athlete from "../../assets/images/athlete.png";
 import AthleteG from "../../assets/images/athleteg.png";
 
+import {motion} from 'framer-motion'
+
 const Home = () => {
+
+  const transition = {type: 'spring', duration : 3}
+
   return (
     <div className="home">
       <div className="left">
         <Header />
 
         <div className="theAd">
-          <div></div>
+        <motion.div
+            initial={{left:'178px'}}
+          whileInView={{left:'8px'}}
+          transition={{...transition, type :'tween'}}
+          ></motion.div>
           <span>the best gym in the town</span>
         </div>
 
@@ -61,11 +70,15 @@ const Home = () => {
       <div className="right">
         <button className="btn">Join Now</button>
 
-        <div className="kcal">
+        <motion.div
+        initial={{right:"-10px"}}
+         whileInView={{right:"40px"}}
+        transition={transition}
+        className="kcal">
           <img src={Kcal} alt="Kcal-icon" />
           <span>Calories Burned</span>
           <span>350 kcal</span>
-        </div>
+          </motion.div>
 
         <img src={Athlete} alt="" className="athlete" />
         <img src={AthleteG} alt="" className="athleteg" />
