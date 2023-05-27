@@ -1,0 +1,78 @@
+.Testimonials{
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    padding-top: 100px;
+}
+
+.left-t{
+    display: flex;
+    flex: 1 1;
+    gap: 32px;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+}
+
+.left-t>:nth-child(1){
+    color: rgb(96, 172, 96);
+    font-weight: bold;
+}
+
+.left-t>:nth-child(2),
+    .left-t>:nth-child(3){
+        font-weight: bold;
+        font-size: 45px;
+    }
+
+.left-t>:nth-child(4){
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.right-t{
+    flex:1;
+    position: relative;
+}
+
+.right-t>img{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    left: 200px;
+    top: 10px;
+}
+
+.right-t>:nth-child(1){
+    position:absolute;
+    width: 250px;
+    height: 300px;
+    border: 2px solid  rgb(96, 172, 96);
+    background-color: transparent;
+    right: 240px;
+    top:-8px;
+}
+.right-t>:nth-child(2){
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    right: 209px;
+    top: 21px;
+    background-color: rgb(96, 172, 96);
+}
+
+.arrows{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 75px;
+}
+
+.arrows>img{
+    width:20px;
+    cursor: pointer;
+}
