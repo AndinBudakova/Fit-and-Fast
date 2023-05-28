@@ -4,6 +4,7 @@ import image3 from "../assets/images/t-image3.jpg";
 import ReactAudioPlayer from "react-audio-player";
 import audioFile1 from "../assets/audio/file1.mp3";
 import audioFile2 from "../assets/audio/file2.mp3";
+import audioFile3 from "../assets/audio/file3.mp3";
 
 export const testimonialsData = [
   {
@@ -27,7 +28,7 @@ export const testimonialsData = [
   },
   {
     image: image2,
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsam, ab itaque nam perferendis impedit sint',
+    review: 'The real workout starts when you want to stop.',
     name: 'JOHN KEVIN',
     status: 'COACH',
     audioFile: (
@@ -46,12 +47,12 @@ export const testimonialsData = [
   },
   {
     image: image3,
-    review: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
+    review: 'The body achieves what the mind believes.',
     name: 'FRANKLIN',
     status: "CUSTOMER",
     audioFile: (
       <ReactAudioPlayer
-        src={audioFile2}
+        src={audioFile3}
         muted
         controls
         style={{

@@ -34,6 +34,11 @@ const Header = () => {
             Testimonials
           </Link>
         </li>
+        <li>
+          <Link to="RandomWorkout" spy={true} smooth={true} duration={2000}>
+            Video
+          </Link>
+        </li>
       </ul>
     </div>
   );

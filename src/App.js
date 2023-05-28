@@ -4,8 +4,8 @@ import Programs from "./components/Programs/Programs";
 import Reasons from "./components/Reasons/Reasons";
 import Plans from "./components/Plans/Plans";
 import Testimonials from "./components/Testimonials/Testimonials";
-import  RandomWorkout from "./components/RandomWorkout"
 import Footer from "./components/Footer/Footer";
+import VideoSlider from "./components/VideoSlider/VideoSlider";
 
 
 
@@ -17,7 +17,7 @@ function App() {
       <Reasons />
       <Plans />
       <Testimonials />
-      <RandomWorkout />
+      <VideoSlider />
       <Footer />
     </div>
   );
