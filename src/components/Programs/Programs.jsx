@@ -1,12 +1,13 @@
 import React from "react";
 import "./Programs.css";
 import RightArrow from "../../assets/images/right-arrow.png";
+import boxx from "../../assets/images/weightlifting.png";
 import { programsData } from "../../data/programsData";
 
 const Programs = () => {
   return (
     <div className="Programs" id="programs">
-      <div className="box"></div>
+      <div className="box"><img src={boxx} alt="" /></div>
       <div className="programs-header">
         <span className="stroke-text">Explore our</span>
         <span>Programs</span>
@@ -26,7 +27,7 @@ const Programs = () => {
           </div>
         ))}
       </div>
-      <div className="box"></div>
+      <div className="box"><img src={boxx} alt="" /></div>
     </div>
   );
 };

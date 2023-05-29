@@ -9,7 +9,7 @@ import audioFile3 from "../assets/audio/file3.mp3";
 export const testimonialsData = [
   {
     image: image1,
-    review: "I made the right choice by choosing the Fitclub and by choosing the right plan and program I already achieved my ideal body!",
+    review: "Fitclub has been a transformative force in my fitness journey. Their tailored plans and programs have helped me achieve my goals and reshape my body!",
     name: 'MATHEW HENDRICKSON',
     status: 'ENTREPRENEUR',
     audioFile: (
@@ -19,16 +19,17 @@ export const testimonialsData = [
         controls
         style={{
           width: "100%",
-          marginTop: "10px",
+          marginTop: "50px",
           padding: "15px",
           borderRadius: "50px",
+          boxShadow: "0px 23px 35px 1px #000000"
         }}
       />
     )
   },
   {
     image: image2,
-    review: 'The real workout starts when you want to stop.',
+    review: 'Choosing Fitclub has been a pivotal decision in my pursuit of fitness. Their expertise and personalized approach have yielded incredible results and pushed me to new heights!',
     name: 'JOHN KEVIN',
     status: 'COACH',
     audioFile: (
@@ -38,16 +39,17 @@ export const testimonialsData = [
         controls
         style={{
           width: "100%",
-          marginTop: "10px",
+          marginTop: "50px",
           padding: "15px",
           borderRadius: "50px",
+          boxShadow: "0px 23px 35px 1px #000000"
         }}
       />
     )
   },
   {
     image: image3,
-    review: 'The body achieves what the mind believes.',
+    review: 'Thanks to Fitclub, I\'ve experienced a complete fitness revolution. Their dedicated trainers and diverse programs have made my journey enjoyable and successful!',
     name: 'FRANKLIN',
     status: "CUSTOMER",
     audioFile: (
@@ -57,9 +59,10 @@ export const testimonialsData = [
         controls
         style={{
           width: "100%",
-          marginTop: "10px",
+          marginTop: "50px",
           padding: "15px",
           borderRadius: "50px",
+          boxShadow: "0px 23px 35px 1px #000000",
         }}
       />
     )

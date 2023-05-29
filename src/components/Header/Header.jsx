@@ -20,7 +20,7 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to="Reasons" spy={true} smooth={true} duration={2000}>
+          <Link to="Reasons" spy={true} smooth={true} duration={1500}>
             Why Us
           </Link>
         </li>
@@ -35,8 +35,8 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to="RandomWorkout" spy={true} smooth={true} duration={2000}>
-            Video
+          <Link to="video-slider-container" spy={true} smooth={true} duration={2000}>
+            Workouts
           </Link>
         </li>
       </ul>

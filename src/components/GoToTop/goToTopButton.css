@@ -1,0 +1,19 @@
+.go-to-top {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 15px;
+    right: -50px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: right 0.5s ease-in-out;
+  }
+  
+  .go-to-top.show {
+    display: block;
+    right: 5px;
+  }
+  
+  button{
+    border: none;
+  }

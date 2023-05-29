@@ -6,6 +6,7 @@ import Plans from "./components/Plans/Plans";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import VideoSlider from "./components/VideoSlider/VideoSlider";
+import GoToTopButton from "./components/GoToTop/GoToTopButton";
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Testimonials />
       <VideoSlider />
       <Footer />
+      <GoToTopButton />
     </div>
   );
 }

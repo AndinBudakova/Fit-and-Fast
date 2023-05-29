@@ -1,17 +1,40 @@
 .box {
-    margin: 30px 40px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius:10px;
-    background-color: rgb(96, 172, 96);
-    width: 100px;
-    height: 100px;
-    box-shadow: 5px 3px 15px rgb(96, 172, 96);
-    animation: boxx 10s infinite;
-    animation-timing-function: ease-in-out;
+    display: flex;
+    justify-content: center;
+    margin: 30px 30px;
+    width: fit-content;
+    height: fit-content;
+    animation: weight-lift 10s ease 0s infinite alternate forwards;
     position: relative;
-}
-
-@keyframes boxx {
+    >img{
+        opacity: 0;
+    }
+  }
+  
+  @keyframes weight-lift {
+    0% {
+      transform: translateX(0);
+      background-image: url(../../assets/images/weightlifting.png);
+    }
+    25% {
+        opacity: 0.5;
+    }
+    40% {
+        opacity: 0.1;
+    }
+    50%{
+        background-image: url(../../assets/images/man-lifting-weight.png);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+      transform: translateX(1380px);
+      background-image: url(../../assets/images/man-lifting-weight.png);
+    }
+  }
+  
+/* @keyframes boxx {
 
     0% {
         left: 0%;
@@ -24,7 +47,7 @@
         left: 0%;
     }
     
-}
+} */
 .Programs {
     display: flex;
     flex-direction: column;
@@ -43,13 +66,13 @@
     color: black;
     text-transform: uppercase;
     font-style: italic;
-    margin: 10px 50px;
+    margin: 30px 50px;
 }
 
 .program-category {
     display: flex;
     gap: 10px;
-    margin: 0px 50px;
+    margin: 10px 50px;
     height: 300px;
 
     :hover {

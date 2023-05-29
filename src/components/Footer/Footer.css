@@ -8,13 +8,12 @@
 }
 
 .footer{
-    padding: 120px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 40px;
     align-items: center;
     justify-content: center;
-    height: 50px;
 }
 
 .social-links{

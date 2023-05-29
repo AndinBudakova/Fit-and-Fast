@@ -35,10 +35,13 @@ const VideoSlider = () => {
       <video
         ref={videoRef}
         src={videos[currentVideo]}
+        muted
         controls
-        width="600"
         height="500"
-        autoPlay
+        style={{
+          marginTop: "80px",
+          boxShadow: "0px 50px 80px 5px #000000"
+        }}
       />
       <button onClick={changeVideo}>Change Video</button>
     </div>
