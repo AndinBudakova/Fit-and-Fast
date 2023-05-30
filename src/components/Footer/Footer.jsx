@@ -4,6 +4,7 @@ import GitHub from "../../assets/images/github.png";
 import Instagram from "../../assets/images/instagram.png";
 import LinkedIn from "../../assets/images/linkedin.png";
 import Logo from "../../assets/images/logo.png";
+import Canvas from "../Canvas/TableCanvas.jsx"
 
 const Footer = () => {
   return (
@@ -16,7 +17,8 @@ const Footer = () => {
           <img src={LinkedIn} alt="" />
         </div>
         <div className="logo-f">
-          <img src={Logo} alt="" />
+          {/* <img src={Logo} alt="" /> */}
+          <Canvas />
         </div>
       </div>
     </div>

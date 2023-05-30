@@ -26,6 +26,11 @@
     height: 40px;
     cursor: pointer;
 }
-.logo-f>img{
-    width: 160px;
+.logo-f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/* .logo-f>img{
+    width: 160px;
+} */
