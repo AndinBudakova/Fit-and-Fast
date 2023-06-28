@@ -20,8 +20,7 @@ function Reasons() {
     useEffect(() => {
       images.forEach((imageSrc, index) => {
         const ref = pixiRefs[index];
-  
-        // Load the image first to get its dimensions
+
         const image = new Image();
         image.src = imageSrc;
         image.onload = () => {
@@ -36,10 +35,9 @@ function Reasons() {
           sprite.anchor.set(0.5);
           sprite.x = app.screen.width / 2;
           sprite.y = app.screen.height / 2;
-          sprite.scale.set(0.1, 0.1);  // set initial scale to smaller than original size
+          sprite.scale.set(0.1, 0.1); 
           app.stage.addChild(sprite);
   
-          // zoom effect logic
           app.ticker.add(() => {
             if (sprite.scale.x < 1) {
               sprite.scale.x += 0.01;

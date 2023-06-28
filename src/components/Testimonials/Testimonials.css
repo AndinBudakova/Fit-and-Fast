@@ -31,6 +31,7 @@
     text-transform: none;
     height: 150px;
     letter-spacing: 2px;
+    font-family: 'Playfair Display SC', serif;
 }
 
 .left-t span:last-child{

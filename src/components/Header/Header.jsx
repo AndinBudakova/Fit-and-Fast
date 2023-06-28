@@ -8,7 +8,6 @@ const Header = () => {
   const logoRef = useRef(null);
 
   useEffect(() => {
-    // Load the logo image first to get its dimensions
     const logoImage = new Image();
     logoImage.src = Logo;
     logoImage.onload = () => {
@@ -22,15 +21,14 @@ const Header = () => {
       logoSprite.anchor.set(0.5);
       logoSprite.x = app.screen.width / 2;
       logoSprite.y = app.screen.height / 2;
-      logoSprite.alpha = 0; // set initial transparency to invisible
+      logoSprite.alpha = 0;
       app.stage.addChild(logoSprite);
 
-      // fade in/out logic
-      let fadeDirection = 1; // 1 for fade in, -1 for fade out
+      let fadeDirection = 1;
       app.ticker.add(() => {
         logoSprite.alpha += 0.01 * fadeDirection;
-        if (logoSprite.alpha >= 1) fadeDirection = -1; // fade out when fully visible
-        else if (logoSprite.alpha <= 0) fadeDirection = 1; // fade in when fully invisible
+        if (logoSprite.alpha >= 1) fadeDirection = -1;
+        else if (logoSprite.alpha <= 0) fadeDirection = 1;
       });
 
       if (logoRef.current) {

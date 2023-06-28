@@ -37,7 +37,7 @@ const Home = () => {
           </div>
 
           <div>
-            <span>
+            <span className="font-span">
               Unleash your inner strength and forge a powerful physique at our
               gym
             </span>
