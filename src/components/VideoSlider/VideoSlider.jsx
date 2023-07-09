@@ -1,48 +1,28 @@
-import React, { useState, useRef } from 'react';
-import armsVideo from '../../assets/videos/arms.mp4';
-import backVideo from '../../assets/videos/back.mp4';
-import legsVideo from '../../assets/videos/legs.mp4';
-import shouldersVideo from '../../assets/videos/shoulders.mp4';
-import chestVideo from '../../assets/videos/chest.mp4';
+import React, { useState, lazy, Suspense } from 'react';
 import './VideoSlider.css';
 
 const VideoSlider = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
-  const videoRef = useRef(null);
 
-  const videos = [
-    armsVideo,
-    legsVideo,
-    shouldersVideo,
-    chestVideo,
-    backVideo,
+  const videoComponents = [
+    lazy(() => import('../../components/VideoSlider/armsVideo')),
+    lazy(() => import('../../components/VideoSlider/legsVideo')),
+    lazy(() => import('../../components/VideoSlider/shoulderVideo')),
+    lazy(() => import('../../components/VideoSlider/chestVideo')),
+    lazy(() => import('../../components/VideoSlider/backVideo')),
   ];
 
   const changeVideo = () => {
-    const videoElement = videoRef.current;
-    if (videoElement) {
-      videoElement.classList.add('fade-out');
-      setTimeout(() => {
-        const nextVideo = (currentVideo + 1) % videos.length;
-        setCurrentVideo(nextVideo);
-        videoElement.classList.remove('fade-out');
-      }, 500);
-    }
+    setCurrentVideo((currentVideo + 1) % videoComponents.length);
   };
+
+  const VideoComponent = videoComponents[currentVideo];
 
   return (
     <div className="video-slider-container">
-      <video
-        ref={videoRef}
-        src={videos[currentVideo]}
-        muted
-        controls
-        height="500"
-        style={{
-          marginTop: "80px",
-          boxShadow: "0px 50px 80px 5px #000000"
-        }}
-      />
+      <Suspense fallback={<div>Loading...</div>}>
+        {VideoComponent && <VideoComponent />}
+      </Suspense>
       <button onClick={changeVideo}>Change Video</button>
     </div>
   );
